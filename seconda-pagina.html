@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms/Moduli</title>
+</head>
+
+    <body>
+    <h1>Forms/moduli</h1>
+    
+        <form action="pagina_che_prenderà_in_carico_i_dati_inseriti_all'interno_del_form.html" method="">
+        <!-- Input di tipo Testo -->
+        <input type="text"><br>
+            
+        <!-- Input di tipo Radio -->    
+        <input type="radio" value="maschio" name="genere"> Maschio
+        <input type="radio" value="femmina" name="genere"> Femmina
+            
+        <!-- Input di tipo Checkbox -->
+        <input type="checkbox" value="si" name="Privacy"> Accetto le condizioni di utilizzo e privacy
+        <input type="checkbox" value="no" name="Privacy"> Non accetto le condizioni di utilizzo e privacy
+        
+        <fieldset>
+        <legend>Raggruppamento di campi all'interno di un modulo HTML</legend>
+        <!-- Input di tipo Password -->
+        <input type="password" name="password">
+        <br><br>
+            
+        <!-- Input di tipo Button -->    
+        <input type="button" value="questo è un bottone">
+        <br><br>
+        
+        <textarea name="testo">Questa è un area di testo anche molto molto lunga.</textarea>
+            
+        <br><br>
+        <label form="menu-tendina">Seleziona il tuo mezzo di trasporto</label>
+        <select name="menu_tendina">
+            <optgroup label="quattro ruote">
+                 <option>Macchina</option>
+           </optgroup> 
+           <optgroup label="Due ruote">
+                <option>Bici</option>
+                <option selected="selected">Moto</option>
+            </optgroup>
+        </select>    
+        </fieldset>
+        <br><br>
+            
+        <!-- Input di tipo Submit --> 
+        <input type="submit" value="Invia modulo">
+        
+        <!-- Input di tipo Reset --> 
+        <input type="reset" value="Cancella modulo">
+        <br><br>
+        </form>
+    
+    </body>
+</html>
