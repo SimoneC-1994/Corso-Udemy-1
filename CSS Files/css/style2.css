@@ -1,0 +1,58 @@
+p {
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    font-size: 100px;
+    font-weight: bolder;
+    color: blueviolet;
+    
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    
+    line-height: 1;
+    
+    text-align: left;
+    
+    text-decoration: underline;
+    
+    direction: ltr;
+    
+    text-indent: 30px;
+    
+}
+
+span {
+    
+    vertical-align: middle;
+    
+    font-size: 50px;
+        
+}
+
+a {
+    
+    text-decoration: none;
+    color: white;
+    
+    background-color: royalblue;
+    padding: 8px 8px;
+    margin: 10px;
+    
+    display:inline-block;
+    
+    border-radius: 8px;
+}
+
+a:hover {
+    
+    background-color: palevioletred;
+    padding: 16px 16px;
+    border-radius: 16px;
+    
+}
+
+a:visited {
+    
+    background-color: aquamarine;
+    
+}
