@@ -1,0 +1,277 @@
+@import 'compass';
+@include global-reset;
+
+/* Variabile di tipo numerico */
+$variabile: 50px;
+$var:1.32;
+$numerica: 20;
+
+/* Variabili di tipo stringa */
+$vars:"Questa è una variabile SASS";
+$text: Helvetiva, Arial, sans-serif;
+
+/* Variabili di tipo colore */
+$color: red;
+
+/* Variabili di tipo Boolean */
+$bool1: true;
+$bool2: false;
+
+/* Variabile Null */
+$null1: null;
+
+/* Variabile di tipo List */
+$list: 20px 10px 50px 60px;
+$list2: 20px -15px 30px -25px;
+
+/* h1 {
+    
+    color: violet;
+    font-size: $variabile;
+    padding: $variabile;
+    
+    $variabile-2: 150px !global;
+    
+    font-size: $variabile-2;
+    font-family: $text;
+    
+}
+
+h2 {
+    
+    font-size: $variabile;
+    
+    font-size: $variabile-2 * 2;
+    
+    color: $color;
+    
+    padding: nth($list, 1);
+    
+    margin: $list2;
+    
+    font-size: 100 - $numerica +px;
+    
+}
+*/
+
+
+/* Operatori di confronto  < > <= >= == !=  */
+
+
+/* div {
+    
+    width: 300px;
+    height: 300px;
+    display: block;
+    float: left;
+    background-color: rgba(100, 105, 0, 0.5) + rgba(100, 140, 50, 0.5);
+    position: relative;
+    
+    &.container {
+        
+        background-color: green;
+        
+    }
+    
+    
+    span {
+    
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: block;
+    float: left;
+        
+        &#violet {
+            
+            background-color: violet;
+            
+        }
+        
+        #par {
+            
+        color: blue;
+            
+        }
+    
+    }
+} 
+
+*/
+
+/* div:before {
+    
+    content: "ieri ho mangiato #{3 + 4} mele";
+    top: 0;
+    left: 0;
+    
+    cursor: e-resize;
+    font-family: sans-serif;
+    
+} */
+
+
+/* 
+
+@import "stile2.scss";
+@import "sile3.css";
+@import "stile4";
+
+@import "http://www.sito.it/style.css";
+
+@import url("http://127.0.0.1:59076/index.html");
+
+@import "stile2.scss", "stile3.css", "stile4";
+
+
+*/
+
+@mixin stile-container ($width, $height) {
+    
+    width: $width;
+    height: $height;
+    
+    display: block;
+    float: left;
+    
+    position: relative;
+    
+}
+
+.container {
+    
+    @include stile-container(300px, 300px);
+    
+    background-color: lighten(limegreen, 30%);
+    background-color: saturate(limegreen, 30%);
+    
+    
+    @at-root {
+        span {
+        
+             width: 50px;
+             height: 50px;
+             background-color: yellow;
+             display: block;
+             float: left;
+        
+             }
+    }
+
+
+}
+
+.container2 {
+    
+    @include stile-container(250px, 150px);
+    background-color: darken(blue, 20%);
+    background-color: disaturate(blue, 30%);
+    
+    
+        
+    @each $class, $color in (firstlevel, red) (secondlevel, green) {
+         
+            &.#{$class} {
+        
+        background-color: $color;
+        
+        }
+            
+    }
+}
+
+
+
+    
+    
+/* 
+    $frutta: null;
+    
+    @if $frutta == arancia {
+        
+        border: 10px solid violet;
+        
+    }
+    
+    @else if $frutta == limone {
+        
+        border: 10px solid yellow;
+        
+    }
+    
+    @else if $frutta == kiwi {
+        
+        border: 10px solid green;
+        
+    }
+    
+    @else {
+        
+        border: 10px solid black;
+        
+    }
+    
+    @debug 10 + 5/2;
+    
+    @media print {
+        
+        background-color: violet;
+        
+    }
+    
+    //Tablet
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        
+        background-color: red;
+        
+    }
+    
+    //Mobile / Smartphone
+    @media screen and (max-width: 767px) {
+        
+        background-color: yellow;
+        
+    }
+    
+    //Small Mobile
+    @media screen and (max-width: 360px) {
+        
+        background-color: green;
+        
+    }
+
+
+
+ 
+.level1 {
+    
+    @extend .container;
+    background-color: greenyellow;
+    
+}
+
+.level2 {
+    
+    @extend .container;
+    background-color: yellow;
+    
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

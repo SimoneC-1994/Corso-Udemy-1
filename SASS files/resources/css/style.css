@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* Variabile di tipo numerico */
+/* Variabili di tipo stringa */
+/* Variabili di tipo colore */
+/* Variabili di tipo Boolean */
+/* Variabile Null */
+/* Variabile di tipo List */
+/* h1 {
+    
+    color: violet;
+    font-size: $variabile;
+    padding: $variabile;
+    
+    $variabile-2: 150px !global;
+    
+    font-size: $variabile-2;
+    font-family: $text;
+    
+}
+
+h2 {
+    
+    font-size: $variabile;
+    
+    font-size: $variabile-2 * 2;
+    
+    color: $color;
+    
+    padding: nth($list, 1);
+    
+    margin: $list2;
+    
+    font-size: 100 - $numerica +px;
+    
+}
+*/
+/* Operatori di confronto  < > <= >= == !=  */
+/* div {
+    
+    width: 300px;
+    height: 300px;
+    display: block;
+    float: left;
+    background-color: rgba(100, 105, 0, 0.5) + rgba(100, 140, 50, 0.5);
+    position: relative;
+    
+    &.container {
+        
+        background-color: green;
+        
+    }
+    
+    
+    span {
+    
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: block;
+    float: left;
+        
+        &#violet {
+            
+            background-color: violet;
+            
+        }
+        
+        #par {
+            
+        color: blue;
+            
+        }
+    
+    }
+} 
+
+*/
+/* div:before {
+    
+    content: "ieri ho mangiato 7 mele";
+    top: 0;
+    left: 0;
+    
+    cursor: e-resize;
+    font-family: sans-serif;
+    
+} */
+/* 
+
+@import "stile2.scss";
+@import "sile3.css";
+@import "stile4";
+
+@import "http://www.sito.it/style.css";
+
+@import url("http://127.0.0.1:59076/index.html");
+
+@import "stile2.scss", "stile3.css", "stile4";
+
+
+*/
+.container { width: 300px; height: 300px; display: block; float: left; position: relative; background-color: #adebad; background-color: #0cf30c; }
+
+span { width: 50px; height: 50px; background-color: yellow; display: block; float: left; }
+
+.container2 { width: 250px; height: 150px; display: block; float: left; position: relative; background-color: #000099; background-color: disaturate(blue, 30%); }
+
+.container2.firstlevel { background-color: red; }
+
+.container2.secondlevel { background-color: green; }
+
+/* 
+    $frutta: null;
+    
+    @if $frutta == arancia {
+        
+        border: 10px solid violet;
+        
+    }
+    
+    @else if $frutta == limone {
+        
+        border: 10px solid yellow;
+        
+    }
+    
+    @else if $frutta == kiwi {
+        
+        border: 10px solid green;
+        
+    }
+    
+    @else {
+        
+        border: 10px solid black;
+        
+    }
+    
+    @debug 10 + 5/2;
+    
+    @media print {
+        
+        background-color: violet;
+        
+    }
+    
+    //Tablet
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        
+        background-color: red;
+        
+    }
+    
+    //Mobile / Smartphone
+    @media screen and (max-width: 767px) {
+        
+        background-color: yellow;
+        
+    }
+    
+    //Small Mobile
+    @media screen and (max-width: 360px) {
+        
+        background-color: green;
+        
+    }
+
+
+
+ 
+.level1 {
+    
+    @extend .container;
+    background-color: greenyellow;
+    
+}
+
+.level2 {
+    
+    @extend .container;
+    background-color: yellow;
+    
+}
+
+*/

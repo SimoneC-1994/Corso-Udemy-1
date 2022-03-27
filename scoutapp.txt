@@ -1,0 +1,7 @@
+Che ha già tutti i maggiori mixins (incluso Compass).
+
+Ricordatevi di importare il Compass nei vostri fogli scss con @import 'compass';
+
+Ricordatevi di sostituire le chiamate @import 'compass/reset'; con @include global-reset;
+
+Eliminate le chiamate di tipo @import 'compass/css3'; - non servono, sono già richiamate automaticamente in Scout App
